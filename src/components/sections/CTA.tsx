@@ -42,7 +42,7 @@ export function CTA() {
             href="mailto:hello@gridmind.ai"
             className="inline-flex items-center justify-center gap-2 border border-emerald text-emerald px-6 py-3.5 rounded-md font-semibold hover:bg-emerald/10 transition"
           >
-            <Mail size={18} /> hello@gridmind.ai
+            <Mail size={18} /><span>hello@gridmind.ai</span>
           </a>
           <a
             href="#"
