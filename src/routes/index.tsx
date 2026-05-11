@@ -1,12 +1,18 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/sections/Hero";
+import { LiveTicker } from "@/components/sections/LiveTicker";
 import { Problem } from "@/components/sections/Problem";
 import { Solution } from "@/components/sections/Solution";
+import { Process } from "@/components/sections/Process";
 import { Demo } from "@/components/sections/Demo";
 import { Stack } from "@/components/sections/Stack";
 import { CaseStudy } from "@/components/sections/CaseStudy";
+import { Testimonials } from "@/components/sections/Testimonials";
+import { Roadmap } from "@/components/sections/Roadmap";
+import { FAQ } from "@/components/sections/FAQ";
 import { About } from "@/components/sections/About";
+import { Newsletter } from "@/components/sections/Newsletter";
 import { CTA } from "@/components/sections/CTA";
 import { Footer } from "@/components/sections/Footer";
 import { useReveal } from "@/hooks/use-reveal";
@@ -37,12 +43,18 @@ function Index() {
     <main className="min-h-screen bg-navy text-light-slate selection:bg-emerald/30 selection:text-lightest">
       <Navbar />
       <Hero />
+      <LiveTicker />
       <Problem />
       <Solution />
+      <Process />
       <Demo />
       <Stack />
       <CaseStudy />
+      <Testimonials />
+      <Roadmap />
+      <FAQ />
       <About />
+      <Newsletter />
       <CTA />
       <Footer />
     </main>
