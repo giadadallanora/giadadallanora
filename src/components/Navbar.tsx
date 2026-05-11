@@ -4,9 +4,11 @@ import { Menu, X, Zap } from "lucide-react";
 const links = [
   { href: "#problem", label: "Problema" },
   { href: "#solution", label: "Soluzione" },
+  { href: "#process", label: "Processo" },
   { href: "#demo", label: "Demo" },
-  { href: "#stack", label: "Stack" },
-  { href: "#case", label: "Case Study" },
+  { href: "#case", label: "Case" },
+  { href: "#roadmap", label: "Roadmap" },
+  { href: "#faq", label: "FAQ" },
   { href: "#about", label: "Chi sono" },
 ];
 
