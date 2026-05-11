@@ -1,4 +1,4 @@
-import { Linkedin, Github, Mail, GraduationCap, Globe2, Code2, Target } from "lucide-react";
+import { Linkedin, Mail, GraduationCap, Globe2, Code2, Target } from "lucide-react";
 import profileImg from "@/assets/profile.jpeg";
 
 const facts = [
@@ -59,13 +59,14 @@ export function About() {
 
             <div className="mt-8 flex gap-3">
               {[
-                { icon: Linkedin, label: "LinkedIn", href: "#" },
-                { icon: Github, label: "GitHub", href: "#" },
-                { icon: Mail, label: "Email", href: "mailto:hello@gridmind.ai" },
+              { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/giadadallanora" },
+                { icon: Mail, label: "Email", href: "mailto:giada.dallanora@outlook.it" },
               ].map(({ icon: Icon, label, href }) => (
                 <a
                   key={label}
                   href={href}
+                  target={href.startsWith("http") ? "_blank" : undefined}
+                  rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
                   aria-label={label}
                   className="w-11 h-11 rounded-lg border border-border flex items-center justify-center text-light-slate hover:border-emerald hover:text-emerald hover:-translate-y-0.5 transition-all"
                 >
