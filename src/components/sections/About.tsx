@@ -14,7 +14,9 @@ export function About() {
       <div className="max-w-6xl mx-auto px-6 lg:px-10">
         <div className="reveal mb-12">
           <p className="font-mono text-emerald text-sm mb-3">// about</p>
-          <h2 className="text-3xl lg:text-5xl font-bold text-lightest">Chi sono</h2>
+          <h2 className="text-3xl lg:text-5xl font-bold text-lightest">
+            Chi sono — <span className="text-emerald">Giada Dalla Nora</span>
+          </h2>
         </div>
 
         <div className="grid lg:grid-cols-5 gap-12 items-center">
