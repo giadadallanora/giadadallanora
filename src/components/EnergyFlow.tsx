@@ -18,10 +18,10 @@ export function EnergyFlow() {
       </div>
 
       {/* Nodes */}
-      <Node icon={<Sun size={22} />} label="Solar" pos="top-4 left-4" />
-      <Node icon={<BatteryCharging size={22} />} label="Battery" pos="top-4 right-4" />
-      <Node icon={<Car size={22} />} label="EV Fleet" pos="bottom-4 right-4" />
-      <Node icon={<Factory size={22} />} label="Plant" pos="bottom-4 left-4" />
+      <Node icon={<Sun size={22} />} label="Solar" pos="top-4 left-4" delay={0} />
+      <Node icon={<BatteryCharging size={22} />} label="Battery" pos="top-4 right-4" delay={0.6} />
+      <Node icon={<Car size={22} />} label="EV Fleet" pos="bottom-4 right-4" delay={1.2} />
+      <Node icon={<Factory size={22} />} label="Plant" pos="bottom-4 left-4" delay={1.8} />
 
       {/* Connecting lines */}
       <svg className="absolute inset-0 w-full h-full z-10" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -44,10 +44,10 @@ export function EnergyFlow() {
   );
 }
 
-function Node({ icon, label, pos }: { icon: React.ReactNode; label: string; pos: string }) {
+function Node({ icon, label, pos, delay }: { icon: React.ReactNode; label: string; pos: string; delay: number }) {
   return (
     <div className={`absolute ${pos} z-20`}>
-      <div className="w-16 h-16 rounded-xl bg-navy-light border border-emerald/40 flex flex-col items-center justify-center text-emerald shadow-lg animate-float" style={{ animationDelay: `${Math.random()}s` }}>
+      <div className="w-16 h-16 rounded-xl bg-navy-light border border-emerald/40 flex flex-col items-center justify-center text-emerald shadow-lg animate-float" style={{ animationDelay: `${delay}s` }}>
         {icon}
         <span className="text-[9px] font-mono mt-0.5 text-light-slate">{label}</span>
       </div>
