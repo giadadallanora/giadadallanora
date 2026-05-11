@@ -1,4 +1,5 @@
 import { Linkedin, Github, Mail, GraduationCap, Globe2, Code2, Target } from "lucide-react";
+import profileImg from "@/assets/profile.jpeg";
 
 const facts = [
   { icon: GraduationCap, text: "Ingegneria Informatica, UNITS" },
@@ -21,11 +22,12 @@ export function About() {
             <div className="relative">
               <div className="absolute inset-0 rounded-full bg-emerald/30 blur-2xl" />
               <div className="relative w-56 h-56 lg:w-64 lg:h-64 rounded-full border-2 border-emerald p-1.5 glow">
-                <div className="w-full h-full rounded-full bg-gradient-to-br from-navy-lighter via-navy-light to-navy flex items-center justify-center overflow-hidden">
-                  <svg viewBox="0 0 100 100" className="w-2/3 h-2/3 text-emerald/40">
-                    <circle cx="50" cy="38" r="18" fill="currentColor" />
-                    <path d="M20,95 Q20,60 50,60 Q80,60 80,95 Z" fill="currentColor" />
-                  </svg>
+                <div className="w-full h-full rounded-full overflow-hidden bg-navy-light">
+                  <img
+                    src={profileImg}
+                    alt="Foto profilo della founder di GridMind AI"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
               <div className="absolute -bottom-2 -right-2 bg-navy-light border border-emerald/40 rounded-md px-3 py-1.5 text-xs font-mono text-emerald">
