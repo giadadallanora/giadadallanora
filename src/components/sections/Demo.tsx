@@ -418,7 +418,7 @@ function exportPDF(runs: SavedRun[], current: ReturnType<typeof simulate>, curre
     doc.setFontSize(8);
     doc.setTextColor(136, 146, 176);
     doc.text(
-      `GridMind AI · pagina ${i}/${pageCount} · hello@gridmind.ai`,
+      `GridMind AI · pagina ${i}/${pageCount} · giada.dallanora@outlook.it`,
       40,
       doc.internal.pageSize.getHeight() - 20,
     );

@@ -1,4 +1,4 @@
-import { Linkedin, Github, Zap } from "lucide-react";
+import { Linkedin, Zap } from "lucide-react";
 
 export function Footer() {
   return (
@@ -24,11 +24,8 @@ export function Footer() {
             <div className="flex flex-wrap gap-5 text-sm">
               <a href="#" className="text-light-slate hover:text-emerald transition">Privacy</a>
               <a href="#" className="text-light-slate hover:text-emerald transition">Terms</a>
-              <a href="#" className="text-light-slate hover:text-emerald transition inline-flex items-center gap-1.5">
+              <a href="https://www.linkedin.com/in/giadadallanora" target="_blank" rel="noopener noreferrer" className="text-light-slate hover:text-emerald transition inline-flex items-center gap-1.5">
                 <Linkedin size={14} /> LinkedIn
-              </a>
-              <a href="#" className="text-light-slate hover:text-emerald transition inline-flex items-center gap-1.5">
-                <Github size={14} /> GitHub
               </a>
             </div>
             <p className="text-xs text-slate font-mono">
