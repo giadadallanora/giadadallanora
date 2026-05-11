@@ -39,10 +39,10 @@ export function CTA() {
             <Calendar size={18} /> Prenota call gratuita 30 min
           </a>
           <a
-            href="mailto:hello@gridmind.ai"
+            href="mailto:giada.dallanora@outlook.it"
             className="inline-flex items-center justify-center gap-2 border border-emerald text-emerald px-6 py-3.5 rounded-md font-semibold hover:bg-emerald/10 transition"
           >
-            <Mail size={18} /><span>hello@gridmind.ai</span>
+            <Mail size={18} /><span>giada.dallanora@outlook.it</span>
           </a>
           <a
             href="#"
