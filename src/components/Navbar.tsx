@@ -51,12 +51,12 @@ export function Navbar() {
               {l.label}
             </a>
           ))}
-          <a
-            href="#cta"
+          <button
+            onClick={openBooking}
             className="px-4 py-2 rounded-md border border-emerald text-emerald hover:bg-emerald/10 transition text-sm font-medium"
           >
             Prenota call
-          </a>
+          </button>
         </nav>
 
         <button
@@ -82,13 +82,12 @@ export function Navbar() {
                 {l.label}
               </a>
             ))}
-            <a
-              href="#cta"
-              onClick={() => setOpen(false)}
+            <button
+              onClick={() => { setOpen(false); openBooking(); }}
               className="mt-2 px-4 py-2 rounded-md border border-emerald text-emerald text-center"
             >
               Prenota call
-            </a>
+            </button>
           </div>
         </div>
       )}
