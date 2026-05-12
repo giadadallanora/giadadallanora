@@ -1,13 +1,14 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Zap } from "lucide-react";
+import { openBooking } from "@/components/BookingDialog";
 
 const links = [
   { href: "#problem", label: "Problema" },
   { href: "#solution", label: "Soluzione" },
-  { href: "#process", label: "Processo" },
   { href: "#demo", label: "Demo" },
+  { href: "#calculator", label: "ROI" },
   { href: "#case", label: "Case" },
-  { href: "#roadmap", label: "Roadmap" },
+  { href: "#pricing", label: "Pricing" },
   { href: "#faq", label: "FAQ" },
   { href: "#about", label: "Chi sono" },
 ];

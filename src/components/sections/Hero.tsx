@@ -1,5 +1,6 @@
 import { ArrowRight, PlayCircle } from "lucide-react";
 import { EnergyFlow } from "../EnergyFlow";
+import { openBooking } from "@/components/BookingDialog";
 
 export function Hero() {
   return (
@@ -25,17 +26,17 @@ export function Hero() {
           </p>
           <div className="mt-9 flex flex-wrap gap-4">
             <a
-              href="#cta"
+              href="#demo"
               className="group inline-flex items-center gap-2 bg-emerald text-navy px-6 py-3 rounded-md font-semibold hover:glow transition-all"
             >
               <PlayCircle size={18} /> Vedi la demo
             </a>
-            <a
-              href="#cta"
+            <button
+              onClick={openBooking}
               className="inline-flex items-center gap-2 border border-emerald text-emerald px-6 py-3 rounded-md font-semibold hover:bg-emerald/10 transition-all"
             >
               Prenota una call <ArrowRight size={16} />
-            </a>
+            </button>
           </div>
           <div className="mt-10 flex items-center gap-6 text-xs font-mono text-slate">
             <span className="flex items-center gap-2">
