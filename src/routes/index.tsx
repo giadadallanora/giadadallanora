@@ -51,9 +51,12 @@ function Index() {
       <Solution />
       <Process />
       <Demo />
+      <Calculator />
+      <Stats />
       <Stack />
       <CaseStudy />
       <Testimonials />
+      <Pricing />
       <Roadmap />
       <FAQ />
       <About />
