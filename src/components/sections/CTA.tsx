@@ -1,9 +1,10 @@
 import { Calendar, Mail, Download } from "lucide-react";
+import { openBooking } from "@/components/BookingDialog";
+import { downloadWhitepaper } from "@/lib/whitepaper";
 
 export function CTA() {
   return (
     <section id="cta" className="py-24 lg:py-32 relative overflow-hidden">
-      {/* Particle background */}
       <div className="absolute inset-0 bg-gradient-to-b from-navy via-navy-light/40 to-navy" />
       <div className="absolute inset-0 grid-bg opacity-30" />
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -32,24 +33,24 @@ export function CTA() {
         </p>
 
         <div className="reveal mt-10 flex flex-col sm:flex-row gap-3 justify-center">
-          <a
-            href="#"
+          <button
+            onClick={openBooking}
             className="inline-flex items-center justify-center gap-2 bg-emerald text-navy px-6 py-3.5 rounded-md font-semibold hover:glow transition"
           >
             <Calendar size={18} /> Prenota call gratuita 30 min
-          </a>
+          </button>
           <a
             href="mailto:giada.dallanora@outlook.it"
             className="inline-flex items-center justify-center gap-2 border border-emerald text-emerald px-6 py-3.5 rounded-md font-semibold hover:bg-emerald/10 transition"
           >
             <Mail size={18} /><span>giada.dallanora@outlook.it</span>
           </a>
-          <a
-            href="#"
+          <button
+            onClick={downloadWhitepaper}
             className="inline-flex items-center justify-center gap-2 border border-border text-light-slate px-6 py-3.5 rounded-md font-medium hover:border-emerald hover:text-emerald transition"
           >
             <Download size={18} /> Whitepaper
-          </a>
+          </button>
         </div>
 
         <p className="reveal mt-6 text-xs font-mono text-slate">

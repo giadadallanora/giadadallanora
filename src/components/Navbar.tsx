@@ -1,13 +1,14 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Zap } from "lucide-react";
+import { openBooking } from "@/components/BookingDialog";
 
 const links = [
   { href: "#problem", label: "Problema" },
   { href: "#solution", label: "Soluzione" },
-  { href: "#process", label: "Processo" },
   { href: "#demo", label: "Demo" },
+  { href: "#calculator", label: "ROI" },
   { href: "#case", label: "Case" },
-  { href: "#roadmap", label: "Roadmap" },
+  { href: "#pricing", label: "Pricing" },
   { href: "#faq", label: "FAQ" },
   { href: "#about", label: "Chi sono" },
 ];
@@ -50,12 +51,12 @@ export function Navbar() {
               {l.label}
             </a>
           ))}
-          <a
-            href="#cta"
+          <button
+            onClick={openBooking}
             className="px-4 py-2 rounded-md border border-emerald text-emerald hover:bg-emerald/10 transition text-sm font-medium"
           >
             Prenota call
-          </a>
+          </button>
         </nav>
 
         <button
@@ -81,13 +82,12 @@ export function Navbar() {
                 {l.label}
               </a>
             ))}
-            <a
-              href="#cta"
-              onClick={() => setOpen(false)}
+            <button
+              onClick={() => { setOpen(false); openBooking(); }}
               className="mt-2 px-4 py-2 rounded-md border border-emerald text-emerald text-center"
             >
               Prenota call
-            </a>
+            </button>
           </div>
         </div>
       )}
