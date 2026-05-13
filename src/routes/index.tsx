@@ -47,6 +47,7 @@ function Index() {
       <Navbar />
       <Hero />
       <LiveTicker />
+      <About />
       <Problem />
       <Solution />
       <Process />
@@ -59,7 +60,6 @@ function Index() {
       <Pricing />
       <Roadmap />
       <FAQ />
-      <About />
       <Newsletter />
       <CTA />
       <Footer />
