@@ -8,15 +8,6 @@ const facts = [
   { icon: Target, text: "Missione: rendere ogni watt solare contabile, ottimizzabile, valorizzabile" },
 ];
 
-const timeline = [
-  { year: "2020", title: "Liceo Scientifico", desc: "Diploma con 100/100 e prima passione per la fisica applicata." },
-  { year: "2021", title: "UNITS — Ingegneria Informatica", desc: "Mi innamoro di algoritmi, sistemi distribuiti e ottimizzazione." },
-  { year: "2023", title: "Erasmus + UN Internship", desc: "Sei mesi a Ginevra: lavoro su data pipelines per programmi sostenibilità." },
-  { year: "2024", title: "Tesi su Digital Twin energetici", desc: "Modellazione di micro-grid industriali con ML predittivo." },
-  { year: "2025", title: "Progetto GridMind.AI", desc: "Trasformo la tesi in un MVP reale, con un primo pilot industriale." },
-  { year: "2026", title: "Founder & ML Engineer", desc: "GridMind.AI: rendere le micro-grid italiane intelligenti e profittevoli." },
-];
-
 const skills = [
   { name: "Python / NumPy / Pandas", level: 95 },
   { name: "Machine Learning (TensorFlow, PyTorch)", level: 88 },
@@ -34,8 +25,7 @@ const values = [
 const funFacts = [
   { icon: Coffee, text: "3 caffè/giorno, mai meno" },
   { icon: BookOpen, text: "Fan di Andrew Ng & Hannah Ritchie" },
-  { icon: Languages, text: "IT · EN · FR · un po' di tedesco" },
-  { icon: Globe2, text: "20+ paesi visitati" },
+  { icon: Languages, text: "IT · EN · SP · un po' di francese" },
 ];
 
 export function About() {
@@ -104,7 +94,7 @@ export function About() {
               <p className="text-lg">
                 Sono <span className="text-lightest font-medium">Giada Dalla Nora</span>,
                 ingegnere informatico con un'ossessione per l'ottimizzazione e un'ansia
-                per lo spreco energetico. Cresciuta tra le Alpi friulane, ho imparato
+                per lo spreco energetico. Cresciuta tra la tranquillità e i paesaggi della campagna veneta, ho imparato
                 presto due cose: che <span className="text-emerald">le risorse non sono infinite</span>{" "}
                 e che <span className="text-emerald">i sistemi complessi possono essere semplici</span>,
                 se ascoltati con i dati giusti.
@@ -150,23 +140,6 @@ export function About() {
                   </div>
                 ))}
               </div>
-            </div>
-
-            {/* Timeline */}
-            <div>
-              <p className="font-mono text-emerald text-xs uppercase tracking-wider mb-4">// il mio percorso</p>
-              <ol className="relative border-l border-emerald/30 ml-3 space-y-5">
-                {timeline.map((t) => (
-                  <li key={t.year} className="pl-6 relative">
-                    <span className="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-emerald glow" />
-                    <div className="flex flex-wrap items-baseline gap-2">
-                      <span className="font-mono text-emerald text-sm">{t.year}</span>
-                      <span className="text-lightest font-semibold">{t.title}</span>
-                    </div>
-                    <p className="text-sm text-slate mt-0.5">{t.desc}</p>
-                  </li>
-                ))}
-              </ol>
             </div>
 
             {/* Skills */}
