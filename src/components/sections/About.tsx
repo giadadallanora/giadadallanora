@@ -142,23 +142,6 @@ export function About() {
               </div>
             </div>
 
-            {/* Timeline */}
-            <div>
-              <p className="font-mono text-emerald text-xs uppercase tracking-wider mb-4">// il mio percorso</p>
-              <ol className="relative border-l border-emerald/30 ml-3 space-y-5">
-                {timeline.map((t) => (
-                  <li key={t.year} className="pl-6 relative">
-                    <span className="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-emerald glow" />
-                    <div className="flex flex-wrap items-baseline gap-2">
-                      <span className="font-mono text-emerald text-sm">{t.year}</span>
-                      <span className="text-lightest font-semibold">{t.title}</span>
-                    </div>
-                    <p className="text-sm text-slate mt-0.5">{t.desc}</p>
-                  </li>
-                ))}
-              </ol>
-            </div>
-
             {/* Skills */}
             <div>
               <p className="font-mono text-emerald text-xs uppercase tracking-wider mb-4">// stack & competenze</p>
