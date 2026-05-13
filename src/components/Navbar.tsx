@@ -3,6 +3,7 @@ import { Menu, X, Zap } from "lucide-react";
 import { openBooking } from "@/components/BookingDialog";
 
 const links = [
+  { href: "#about", label: "Chi sono" },
   { href: "#problem", label: "Problema" },
   { href: "#solution", label: "Soluzione" },
   { href: "#demo", label: "Demo" },
@@ -10,7 +11,6 @@ const links = [
   { href: "#case", label: "Case" },
   { href: "#pricing", label: "Pricing" },
   { href: "#faq", label: "FAQ" },
-  { href: "#about", label: "Chi sono" },
 ];
 
 export function Navbar() {
