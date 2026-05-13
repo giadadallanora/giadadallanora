@@ -49,7 +49,8 @@ export function About() {
                   <img
                     src={profileImg}
                     alt="Foto profilo di Giada Dalla Nora, founder di GridMind AI"
-                    className="w-full h-full object-cover object-top"
+                    className="w-full h-full object-cover"
+                    style={{ objectPosition: "50% 20%" }}
                   />
                 </div>
               </div>
