@@ -8,15 +8,6 @@ const facts = [
   { icon: Target, text: "Missione: rendere ogni watt solare contabile, ottimizzabile, valorizzabile" },
 ];
 
-const timeline = [
-  { year: "2020", title: "Liceo Scientifico", desc: "Diploma con 100/100 e prima passione per la fisica applicata." },
-  { year: "2021", title: "UNITS — Ingegneria Informatica", desc: "Mi innamoro di algoritmi, sistemi distribuiti e ottimizzazione." },
-  { year: "2023", title: "Erasmus + UN Internship", desc: "Sei mesi a Ginevra: lavoro su data pipelines per programmi sostenibilità." },
-  { year: "2024", title: "Tesi su Digital Twin energetici", desc: "Modellazione di micro-grid industriali con ML predittivo." },
-  { year: "2025", title: "Progetto GridMind.AI", desc: "Trasformo la tesi in un MVP reale, con un primo pilot industriale." },
-  { year: "2026", title: "Founder & ML Engineer", desc: "GridMind.AI: rendere le micro-grid italiane intelligenti e profittevoli." },
-];
-
 const skills = [
   { name: "Python / NumPy / Pandas", level: 95 },
   { name: "Machine Learning (TensorFlow, PyTorch)", level: 88 },
