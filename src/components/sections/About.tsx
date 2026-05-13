@@ -34,8 +34,7 @@ const values = [
 const funFacts = [
   { icon: Coffee, text: "3 caffè/giorno, mai meno" },
   { icon: BookOpen, text: "Fan di Andrew Ng & Hannah Ritchie" },
-  { icon: Languages, text: "IT · EN · FR · un po' di tedesco" },
-  { icon: Globe2, text: "20+ paesi visitati" },
+  { icon: Languages, text: "IT · EN · SP · un po' di francese" },
 ];
 
 export function About() {
@@ -104,7 +103,7 @@ export function About() {
               <p className="text-lg">
                 Sono <span className="text-lightest font-medium">Giada Dalla Nora</span>,
                 ingegnere informatico con un'ossessione per l'ottimizzazione e un'ansia
-                per lo spreco energetico. Cresciuta tra le Alpi friulane, ho imparato
+                per lo spreco energetico. Cresciuta tra la tranquillità e i paesaggi della campagna veneta, ho imparato
                 presto due cose: che <span className="text-emerald">le risorse non sono infinite</span>{" "}
                 e che <span className="text-emerald">i sistemi complessi possono essere semplici</span>,
                 se ascoltati con i dati giusti.
