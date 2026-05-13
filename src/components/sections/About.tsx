@@ -34,10 +34,17 @@ export function About() {
       <div className="absolute inset-0 grid-bg opacity-20 pointer-events-none" />
       <div className="relative max-w-6xl mx-auto px-6 lg:px-10">
         <div className="reveal mb-12">
-          <p className="font-mono text-emerald text-sm mb-3">// about</p>
+          <p className="font-mono text-emerald text-sm mb-3">// about — il prodotto sono io</p>
           <h2 className="text-3xl lg:text-5xl font-bold text-lightest">
             Chi sono — <span className="text-emerald">Giada Dalla Nora</span>
           </h2>
+          <p className="mt-5 text-lg text-light-slate max-w-3xl leading-relaxed">
+            In una startup early-stage <span className="text-lightest font-medium">il prodotto è chi lo costruisce</span>.
+            Prima degli algoritmi, prima dei dashboard, prima dei numeri in bolletta — c'è una persona,
+            una visione, un perché. <span className="text-emerald">GridMind.AI è la versione di me tra 10 anni</span>:
+            l'ingegnere che voglio diventare, l'impatto che voglio aver lasciato, il modo in cui
+            voglio che il mio lavoro parli al pianeta.
+          </p>
         </div>
 
         <div className="grid lg:grid-cols-5 gap-12 items-start">
